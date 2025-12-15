@@ -1,6 +1,7 @@
 FROM openshift/python:3.12-minimal-ubi9
 
 ARG CodeBinary
+ENV CodeBinary=${CodeBinary}
 
 WORKDIR /opt/postal
 
